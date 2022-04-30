@@ -1,5 +1,5 @@
 .whitebox {
     background: white;
     width: 100%;
-    padding: 10px;
+    box-shadow: 1px 1px 1px;
 }
