@@ -1,6 +1,19 @@
-.box {
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.box, .whitebox {
   width: 100%;
   color: blue;
   background-color: skyblue;
   font-size: 34px;
+}
+
+.yeap {
+  width: 100px;
+  font-weight: 50px;
 }/*# sourceMappingURL=test.css.map */

@@ -2,9 +2,24 @@ $메인컬러 : blue;
 $서브컬러 :  skyblue;
 $메인폰트 : 34px;
 
+@use 'reset.scss';
+
 .box {
     width: 100%;
     color: $메인컬러;
     background-color: $서브컬러;
     font-size: $메인폰트;
+}
+
+.whitebox {
+    @extend .box;
+}
+
+@mixin lucas() {
+    width: 100px;
+    font-weight: reset.$fw;
+}
+
+.yeap {
+    @include lucas
 }
