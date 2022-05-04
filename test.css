@@ -1,4 +1,5 @@
 .box {
   width: 100%;
-}
-/*# sourceMappingURL=test.css.map */
+  color: blue;
+  background-color: skyblue;
+}/*# sourceMappingURL=test.css.map */

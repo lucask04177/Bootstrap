@@ -1,6 +1,7 @@
+$메인컬러 : blue;
+$서브컬러 :  skyblue;
 .box {
     width: 100%;
     color: $메인컬러;
+    background-color: $서브컬러;
 }
-
-$메인컬러 : blue;
