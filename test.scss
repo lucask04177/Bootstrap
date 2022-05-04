@@ -1,25 +1,62 @@
-$메인컬러 : blue;
-$서브컬러 :  skyblue;
-$메인폰트 : 34px;
+.white-box {
+    border: 1px solid black;
+    background: white;
+    padding: 10px;
+    list-style: none;
+}
 
-@use 'reset.scss';
+li {
+    border: 1px solid black;
+    background: white;
+    padding: 10px;
+    .active {
+        background-color: blue;
+        color: white;
+    }
+}
 
-.box {
+.active {
+    li {
+        border: 1px solid black;
+        background: white;
+        padding: 10px;
+    }
+    background-color: blue;
+    color: white;
+}
+
+@mixin alert($color) {
+    background-color: $color;
+    padding: 10px;
+    color: white;
+}
+
+.alert-green {
+    @include alert(green);
+}
+
+.alert-red {
+    @include alert(blue);
+}
+
+.alert-yellow {
+    @include alert(black);
+}
+
+
+.row-me {
     width: 100%;
-    color: $메인컬러;
-    background-color: $서브컬러;
-    font-size: $메인폰트;
+    display: flex;
 }
 
-.whitebox {
-    @extend .box;
+.col-6 {
+    width: 50%;
 }
 
-@mixin lucas() {
-    width: 100px;
-    font-weight: reset.$fw;
+.col-4 {
+    width: 33.33%;
 }
 
-.yeap {
-    @include lucas
+.col-2 {
+    width: 20%;
 }
