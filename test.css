@@ -43,19 +43,46 @@ li .active {
   color: white;
 }
 
-.row-me {
-  width: 100%;
-  display: flex;
-}
-
-.col-6 {
+.row-me .col-6 {
+  float: left;
+  padding: 10px;
   width: 50%;
 }
 
-.col-4 {
+.row-me .col-4 {
+  float: left;
+  padding: 10px;
   width: 33.33%;
 }
 
-.col-2 {
-  width: 20%;
+.row-me {
+  float: left;
+  padding: 10px;
+}
+.row-me .col-4 {
+  width: 33.33%;
+}
+
+.row-me {
+  float: left;
+  padding: 10px;
+}
+.row-me .col-3 {
+  width: 25%;
+}
+
+.row-me {
+  float: left;
+  padding: 10px;
+}
+.row-me .col-2 {
+  width: 16%;
+}
+
+.row-me {
+  float: left;
+  padding: 10px;
+}
+.row-me .col-1 {
+  width: 8%;
 }/*# sourceMappingURL=test.css.map */

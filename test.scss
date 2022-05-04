@@ -43,20 +43,48 @@ li {
     @include alert(black);
 }
 
+@mixin row-sd ($hole) {
+    float: left;
+    padding: 10px;  
+    width: $hole;  
+}
+
+.row-me .col-6{
+    @include row-sd (50%)
+}
+
+.row-me .col-4{
+    @include row-sd (33.33%)
+}
 
 .row-me {
-    width: 100%;
-    display: flex;
+    float: left;
+    padding: 10px;
+    .col-4 {
+        width: 33.33%;
+    }
 }
 
-.col-6 {
-    width: 50%;
+.row-me {
+    float: left;
+    padding: 10px;
+    .col-3 {
+        width: 25%;
+    }
 }
 
-.col-4 {
-    width: 33.33%;
+.row-me {
+    float: left;
+    padding: 10px;
+    .col-2 {
+        width: 16%;
+    }
 }
 
-.col-2 {
-    width: 20%;
+.row-me {
+    float: left;
+    padding: 10px;
+    .col-1 {
+        width: 8%;
+    }
 }
